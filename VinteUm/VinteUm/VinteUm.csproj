@@ -9,6 +9,46 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="deck_1\10_copas.png" />
+    <None Remove="deck_1\10_espadas.png" />
+    <None Remove="deck_1\10_ouros.png" />
+    <None Remove="deck_1\10_paus.png" />
+    <None Remove="deck_1\2_copas.png" />
+    <None Remove="deck_1\2_espadas.png" />
+    <None Remove="deck_1\2_ouros.png" />
+    <None Remove="deck_1\2_paus.png" />
+    <None Remove="deck_1\3_copas.png" />
+    <None Remove="deck_1\3_espadas.png" />
+    <None Remove="deck_1\3_ouros.png" />
+    <None Remove="deck_1\3_paus.png" />
+    <None Remove="deck_1\4_copas.png" />
+    <None Remove="deck_1\4_espadas.png" />
+    <None Remove="deck_1\4_ouros.png" />
+    <None Remove="deck_1\4_paus.png" />
+    <None Remove="deck_1\5_copas.png" />
+    <None Remove="deck_1\5_espadas.png" />
+    <None Remove="deck_1\5_ouros.png" />
+    <None Remove="deck_1\5_paus.png" />
+    <None Remove="deck_1\6_copas.png" />
+    <None Remove="deck_1\6_espadas.png" />
+    <None Remove="deck_1\6_ouros.png" />
+    <None Remove="deck_1\6_paus.png" />
+    <None Remove="deck_1\7_copas.png" />
+    <None Remove="deck_1\7_espadas.png" />
+    <None Remove="deck_1\7_ouros.png" />
+    <None Remove="deck_1\7_paus.png" />
+    <None Remove="deck_1\8_copas.png" />
+    <None Remove="deck_1\8_espadas.png" />
+    <None Remove="deck_1\8_ouros.png" />
+    <None Remove="deck_1\8_paus.png" />
+    <None Remove="deck_1\9_copas.png" />
+    <None Remove="deck_1\9_espadas.png" />
+    <None Remove="deck_1\9_ouros.png" />
+    <None Remove="deck_1\9_paus.png" />
+    <None Remove="deck_1\A_copas.png" />
+    <None Remove="deck_1\A_espadas.png" />
+    <None Remove="deck_1\A_ouros.png" />
+    <None Remove="deck_1\A_paus.png" />
     <None Remove="deck_1\C10.png" />
     <None Remove="deck_1\C2.png" />
     <None Remove="deck_1\C3.png" />
@@ -48,6 +88,18 @@
     <None Remove="deck_1\HJ.png" />
     <None Remove="deck_1\HK.png" />
     <None Remove="deck_1\HQ.png" />
+    <None Remove="deck_1\J_copas.png" />
+    <None Remove="deck_1\J_espadas.png" />
+    <None Remove="deck_1\J_ouros.png" />
+    <None Remove="deck_1\J_paus.png" />
+    <None Remove="deck_1\K_copas.png" />
+    <None Remove="deck_1\K_espadas.png" />
+    <None Remove="deck_1\K_ouros.png" />
+    <None Remove="deck_1\K_paus.png" />
+    <None Remove="deck_1\Q_copas.png" />
+    <None Remove="deck_1\Q_espadas.png" />
+    <None Remove="deck_1\Q_ouros.png" />
+    <None Remove="deck_1\Q_paus.png" />
     <None Remove="deck_1\S10.png" />
     <None Remove="deck_1\S2.png" />
     <None Remove="deck_1\S3.png" />
@@ -64,160 +116,160 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="deck_1\C10.png">
+    <Content Include="deck_1\10_copas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\C2.png">
+    <Content Include="deck_1\10_espadas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\C3.png">
+    <Content Include="deck_1\10_ouros.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\C4.png">
+    <Content Include="deck_1\10_paus.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\C5.png">
+    <Content Include="deck_1\2_copas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\C6.png">
+    <Content Include="deck_1\2_espadas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\C7.png">
+    <Content Include="deck_1\2_ouros.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\C8.png">
+    <Content Include="deck_1\2_paus.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\C9.png">
+    <Content Include="deck_1\3_copas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\CA.png">
+    <Content Include="deck_1\3_espadas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\CJ.png">
+    <Content Include="deck_1\3_ouros.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\CK.png">
+    <Content Include="deck_1\3_paus.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\CQ.png">
+    <Content Include="deck_1\4_copas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\D10.png">
+    <Content Include="deck_1\4_espadas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\D2.png">
+    <Content Include="deck_1\4_ouros.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\D3.png">
+    <Content Include="deck_1\4_paus.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\D4.png">
+    <Content Include="deck_1\5_copas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\D5.png">
+    <Content Include="deck_1\5_espadas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\D6.png">
+    <Content Include="deck_1\5_ouros.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\D7.png">
+    <Content Include="deck_1\5_paus.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\D8.png">
+    <Content Include="deck_1\6_copas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\D9.png">
+    <Content Include="deck_1\6_espadas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\DA.png">
+    <Content Include="deck_1\6_ouros.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\DJ.png">
+    <Content Include="deck_1\6_paus.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\DK.png">
+    <Content Include="deck_1\7_copas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\DQ.png">
+    <Content Include="deck_1\7_espadas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\H10.png">
+    <Content Include="deck_1\7_ouros.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\H2.png">
+    <Content Include="deck_1\7_paus.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\H3.png">
+    <Content Include="deck_1\8_copas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\H4.png">
+    <Content Include="deck_1\8_espadas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\H5.png">
+    <Content Include="deck_1\8_ouros.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\H6.png">
+    <Content Include="deck_1\8_paus.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\H7.png">
+    <Content Include="deck_1\9_copas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\H8.png">
+    <Content Include="deck_1\9_espadas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\H9.png">
+    <Content Include="deck_1\9_ouros.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\HA.png">
+    <Content Include="deck_1\9_paus.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\HJ.png">
+    <Content Include="deck_1\A_copas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\HK.png">
+    <Content Include="deck_1\A_espadas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\HQ.png">
+    <Content Include="deck_1\A_ouros.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\S10.png">
+    <Content Include="deck_1\A_paus.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\S2.png">
+    <Content Include="deck_1\J_copas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\S3.png">
+    <Content Include="deck_1\J_espadas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\S4.png">
+    <Content Include="deck_1\J_ouros.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\S5.png">
+    <Content Include="deck_1\J_paus.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\S6.png">
+    <Content Include="deck_1\K_copas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\S7.png">
+    <Content Include="deck_1\K_espadas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\S8.png">
+    <Content Include="deck_1\K_ouros.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\S9.png">
+    <Content Include="deck_1\K_paus.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\SA.png">
+    <Content Include="deck_1\Q_copas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\SJ.png">
+    <Content Include="deck_1\Q_espadas.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\SK.png">
+    <Content Include="deck_1\Q_ouros.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="deck_1\SQ.png">
+    <Content Include="deck_1\Q_paus.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

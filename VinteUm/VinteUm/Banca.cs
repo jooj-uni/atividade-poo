@@ -89,11 +89,11 @@ namespace VinteUm
 
             if (trapaça)
             {
-                return JogarComTrapaca();
+                return joga_com_trapaça();
             }
             else
             {
-                return JogarSemTrapaca();
+                return joga_sem_trapaça();
             }
         }
 

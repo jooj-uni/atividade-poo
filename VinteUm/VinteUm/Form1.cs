@@ -58,7 +58,8 @@ namespace VinteUm
 
             if (jogo.Jogador.Pontuacao > 21)
             {
-                MessageBox.Show("Você perdeu!");
+                MessageBox.Show(jogo.VerificarResultado());
+                AtualizarPlacar();
                 jogoEncerrado = true;
             }
         }
@@ -78,6 +79,7 @@ namespace VinteUm
             AtualizarPontuacao();
 
             MessageBox.Show(jogo.VerificarResultado());
+            AtualizarPlacar();
 
             jogoEncerrado = true;
         }
@@ -101,6 +103,8 @@ namespace VinteUm
 
             jogo.IniciarNovoJogo();
 
+            AtualizarPlacar();
+
             LimparMesa();
 
             AtualizarPontuacao();
@@ -122,7 +126,7 @@ namespace VinteUm
 
             pb.BringToFront();
 
-            posXJogador += 30;
+            posXJogador += 100;
         }
 
         private void MostrarCartaBanca(Carta carta)
@@ -141,7 +145,7 @@ namespace VinteUm
 
             pb.BringToFront();
 
-            posXBanca += 30;
+            posXBanca += 100;
         }
         private void AtualizarPontuacao()
         {
@@ -162,6 +166,15 @@ namespace VinteUm
 
             posXJogador = 50;
             posXBanca = 50;
+        }
+
+        private void AtualizarPlacar()
+        {
+            lblVitoriasJogador.Text =
+                $"{jogo.VitoriasJogador}";
+
+            lblVitoriasBanca.Text =
+                $"{jogo.VitoriasBanca}";
         }
     }
 }

@@ -67,11 +67,11 @@ namespace VinteUm
         public void atribuirPath()
         {
             Dictionary<string, string> dic = new Dictionary<string, string>();
-            dic["Paus"] = "C";
-            dic["Copas"] = "H";
-            dic["Espadas"] = "S";
-            dic["Ouros"] = "D";
-            Path = "deck_1/" + dic[this.Naipe] + this.Valor + ".png";
+            dic["Paus"] = "paus";
+            dic["Copas"] = "copas";
+            dic["Espadas"] = "espadas";
+            dic["Ouros"] = "ouros";
+            Path = "deck_1/" + this.Valor + "_" + dic[this.Naipe]  + ".png";
         }
         public Carta(string _valor, string _naipe)
         {
