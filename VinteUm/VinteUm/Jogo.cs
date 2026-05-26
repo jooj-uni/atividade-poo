@@ -93,17 +93,19 @@ namespace VinteUm
                 return "Rá viu a sua trapaça... você perdeu!";
             }
 
-            if (RaioCosmico())
-            {
-                VitoriasBanca++;
-                return "Um raio cósmico alterou alguns bits de memória. Infelizmente, você perdeu!";
-            }
-
             if ((pJog > pBanca) && (pJog <= 21))
             {
-                VitoriasJogador++;
-                JogadorVenceu = true;
-                return "Jogador venceu!";
+                if (RaioCosmico())
+                {
+                    VitoriasBanca++;
+                    return "Um raio cósmico alterou alguns bits de memória. Infelizmente, você perdeu!";
+                }
+                else
+                {
+                    VitoriasJogador++;
+                    JogadorVenceu = true;
+                    return "Jogador venceu!";
+                }
             }
             else if (pJog > 21)
             {
@@ -196,7 +198,7 @@ namespace VinteUm
 
             if (rnd.NextDouble() < 0.5)
             {
-                MessageBox.Show("A maldição de Rá caiu sobre você. Uma carta retornará ao pó. Mas você ainda uma chance... retire mais uma carta");
+                MessageBox.Show("A maldição de Rá caiu sobre você. Uma carta retornará ao pó. Mas você ainda tem uma chance... retire mais uma carta");
                 VitoriasJogador--;
                 int idx = idxcarta.Next(Jogador.Cartas.Count());
 
