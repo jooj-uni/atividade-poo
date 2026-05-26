@@ -41,12 +41,13 @@
             lblpontbanca = new Label();
             lblVitoriasJogador = new Label();
             lblVitoriasBanca = new Label();
+            btnTrapaca = new Button();
             SuspendLayout();
             // 
             // lblJogador
             // 
             lblJogador.AutoSize = true;
-            lblJogador.Location = new Point(352, 601);
+            lblJogador.Location = new Point(373, 601);
             lblJogador.Name = "lblJogador";
             lblJogador.Size = new Size(61, 15);
             lblJogador.TabIndex = 0;
@@ -55,7 +56,7 @@
             // lblBanca
             // 
             lblBanca.AutoSize = true;
-            lblBanca.Location = new Point(362, 23);
+            lblBanca.Location = new Point(373, 23);
             lblBanca.Name = "lblBanca";
             lblBanca.Size = new Size(51, 15);
             lblBanca.TabIndex = 1;
@@ -72,7 +73,7 @@
             // 
             // btnParar
             // 
-            btnParar.Location = new Point(202, 619);
+            btnParar.Location = new Point(166, 619);
             btnParar.Name = "btnParar";
             btnParar.Size = new Size(131, 57);
             btnParar.TabIndex = 3;
@@ -90,7 +91,7 @@
             // 
             // btnNovoBaralho
             // 
-            btnNovoBaralho.Location = new Point(424, 619);
+            btnNovoBaralho.Location = new Point(498, 619);
             btnNovoBaralho.Name = "btnNovoBaralho";
             btnNovoBaralho.Size = new Size(131, 57);
             btnNovoBaralho.TabIndex = 5;
@@ -156,11 +157,22 @@
             lblVitoriasBanca.TabIndex = 12;
             lblVitoriasBanca.Text = "0";
             // 
+            // btnTrapaca
+            // 
+            btnTrapaca.Location = new Point(332, 619);
+            btnTrapaca.Name = "btnTrapaca";
+            btnTrapaca.Size = new Size(131, 57);
+            btnTrapaca.TabIndex = 13;
+            btnTrapaca.Text = "Trapacear";
+            btnTrapaca.UseVisualStyleBackColor = true;
+            btnTrapaca.Click += btnTrapaca_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(804, 688);
+            Controls.Add(btnTrapaca);
             Controls.Add(lblVitoriasBanca);
             Controls.Add(lblVitoriasJogador);
             Controls.Add(lblpontbanca);
@@ -196,5 +208,6 @@
         private Label lblpontbanca;
         private Label lblVitoriasJogador;
         private Label lblVitoriasBanca;
+        private Button btnTrapaca;
     }
 }

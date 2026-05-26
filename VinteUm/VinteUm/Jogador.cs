@@ -13,6 +13,7 @@ namespace VinteUm
         public Jogador(string nome)
         {
             this.nome = nome;
+            pontuacao = 0;
             cartas = new List<Carta>();
         }
 
@@ -31,6 +32,7 @@ namespace VinteUm
         public List<Carta> Cartas
         {
             get { return cartas; }
+            set { cartas = value; }
         }
 
         public void PegaCarta(Carta carta)
@@ -51,5 +53,7 @@ namespace VinteUm
             cartas.Clear();
             pontuacao = 0;
         }
+
+
     }
 }

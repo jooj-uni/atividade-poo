@@ -9,12 +9,14 @@ namespace VinteUm
     {
         private Jogo jogo;
 
-        private List<PictureBox> cartasNaTela = new();
+        private List<PictureBox> cartasNaTelaJogador = new();
+        private List<PictureBox> cartasNaTelaBanca = new();
 
         private int posXJogador = 50;
         private int posXBanca = 50;
 
         private bool jogoEncerrado = false;
+        private bool maldicao = false;
 
         public Form1()
         {
@@ -38,6 +40,8 @@ namespace VinteUm
         {
             if (jogoEncerrado)
                 return;
+
+            maldicao = false;
 
             Carta carta = jogo.PedirCartaJogador();
 
@@ -66,7 +70,7 @@ namespace VinteUm
 
         private void btnParar_Click(object sender, EventArgs e)
         {
-            if (jogoEncerrado)
+            if (jogoEncerrado || maldicao)
                 return;
 
             List<Carta> cartasBanca = jogo.JogadaBanca();
@@ -79,6 +83,24 @@ namespace VinteUm
             AtualizarPontuacao();
 
             MessageBox.Show(jogo.VerificarResultado());
+
+            if (jogo.JogadorVenceu)
+            {
+                int idx = jogo.CurseOfRa();
+                if (idx >= 0)
+                {
+                    maldicao = true;
+
+                    AtualizarPontuacao();
+
+                    panelJogador.Controls.Remove(cartasNaTelaJogador[idx]);
+
+                    return;
+                }
+            }
+
+            AtualizarPontuacao();
+
             AtualizarPlacar();
 
             jogoEncerrado = true;
@@ -86,6 +108,8 @@ namespace VinteUm
 
         private void btnNovoJogo_Click(object sender, EventArgs e)
         {
+            if (maldicao) return;
+
             jogoEncerrado = false;
 
             jogo.ReiniciarRodada();
@@ -94,11 +118,14 @@ namespace VinteUm
 
             AtualizarPontuacao();
 
+            maldicao = false;
         }
 
 
         private void btnNovoBaralho_Click(object sender, EventArgs e)
         {
+            if(maldicao) return;
+
             jogoEncerrado = false;
 
             jogo.IniciarNovoJogo();
@@ -108,6 +135,8 @@ namespace VinteUm
             LimparMesa();
 
             AtualizarPontuacao();
+
+            maldicao = false;
         }
 
         private void MostrarCartaJogador(Carta carta)
@@ -122,7 +151,7 @@ namespace VinteUm
 
             panelJogador.Controls.Add(pb);
 
-            cartasNaTela.Add(pb);
+            cartasNaTelaJogador.Add(pb);
 
             pb.BringToFront();
 
@@ -141,7 +170,7 @@ namespace VinteUm
 
             panelBanca.Controls.Add(pb);
 
-            cartasNaTela.Add(pb);
+            cartasNaTelaBanca.Add(pb);
 
             pb.BringToFront();
 
@@ -155,14 +184,21 @@ namespace VinteUm
 
         private void LimparMesa()
         {
-            foreach (PictureBox pb in cartasNaTela)
+            foreach (PictureBox pb in cartasNaTelaJogador)
             {
                 panelJogador.Controls.Remove(pb);
+                pb.Dispose();
+            }
+
+            cartasNaTelaJogador.Clear();
+
+            foreach (PictureBox pb in cartasNaTelaBanca)
+            {
                 panelBanca.Controls.Remove(pb);
                 pb.Dispose();
             }
 
-            cartasNaTela.Clear();
+            cartasNaTelaBanca.Clear();
 
             posXJogador = 50;
             posXBanca = 50;
@@ -175,6 +211,33 @@ namespace VinteUm
 
             lblVitoriasBanca.Text =
                 $"{jogo.VitoriasBanca}";
+        }
+
+        private void btnTrapaca_Click(object sender, EventArgs e)
+        {
+            if (jogoEncerrado)
+                return;
+
+            maldicao = false;
+
+            Carta carta = jogo.TrapacearJogador();
+
+            if (jogo.TrapacaDetectada)
+            {
+                jogoEncerrado = true;
+
+                AtualizarPontuacao();
+
+                MessageBox.Show(jogo.VerificarResultado());
+
+                AtualizarPlacar();
+            }
+
+            else
+            {
+                MostrarCartaJogador(carta);
+                AtualizarPontuacao();
+            }
         }
     }
 }
