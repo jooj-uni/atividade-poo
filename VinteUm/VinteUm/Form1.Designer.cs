@@ -36,9 +36,6 @@
             btnNovoBaralho = new Button();
             panelJogador = new Panel();
             panelBanca = new Panel();
-            label1 = new Label();
-            lblpontjog = new Label();
-            lblpontbanca = new Label();
             lblVitoriasJogador = new Label();
             lblVitoriasBanca = new Label();
             btnTrapaca = new Button();
@@ -47,121 +44,113 @@
             // lblJogador
             // 
             lblJogador.AutoSize = true;
+            lblJogador.BackColor = Color.Transparent;
+            lblJogador.Font = new Font("Castellar", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblJogador.ForeColor = Color.MistyRose;
             lblJogador.Location = new Point(373, 601);
             lblJogador.Name = "lblJogador";
-            lblJogador.Size = new Size(61, 15);
+            lblJogador.Size = new Size(98, 14);
             lblJogador.TabIndex = 0;
             lblJogador.Text = "Jogador: 0";
             // 
             // lblBanca
             // 
             lblBanca.AutoSize = true;
+            lblBanca.BackColor = Color.Transparent;
+            lblBanca.Font = new Font("Castellar", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBanca.ForeColor = Color.MistyRose;
             lblBanca.Location = new Point(373, 23);
             lblBanca.Name = "lblBanca";
-            lblBanca.Size = new Size(51, 15);
+            lblBanca.Size = new Size(79, 14);
             lblBanca.TabIndex = 1;
             lblBanca.Text = "Banca: 0";
             // 
             // btnNovaCarta
             // 
-            btnNovaCarta.Location = new Point(12, 619);
+            btnNovaCarta.Font = new Font("Castellar", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNovaCarta.Location = new Point(76, 620);
             btnNovaCarta.Name = "btnNovaCarta";
-            btnNovaCarta.Size = new Size(131, 57);
+            btnNovaCarta.Size = new Size(119, 57);
             btnNovaCarta.TabIndex = 2;
             btnNovaCarta.Text = "Nova Carta";
             btnNovaCarta.UseVisualStyleBackColor = true;
             // 
             // btnParar
             // 
-            btnParar.Location = new Point(166, 619);
+            btnParar.Font = new Font("Castellar", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnParar.Location = new Point(201, 620);
             btnParar.Name = "btnParar";
-            btnParar.Size = new Size(131, 57);
+            btnParar.Size = new Size(119, 57);
             btnParar.TabIndex = 3;
             btnParar.Text = "Parar";
             btnParar.UseVisualStyleBackColor = true;
             // 
             // btnNovoJogo
             // 
-            btnNovoJogo.Location = new Point(657, 619);
+            btnNovoJogo.Font = new Font("Castellar", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNovoJogo.Location = new Point(626, 617);
             btnNovoJogo.Name = "btnNovoJogo";
-            btnNovoJogo.Size = new Size(131, 57);
+            btnNovoJogo.Size = new Size(119, 57);
             btnNovoJogo.TabIndex = 4;
             btnNovoJogo.Text = "Nova Rodada";
             btnNovoJogo.UseVisualStyleBackColor = true;
             // 
             // btnNovoBaralho
             // 
-            btnNovoBaralho.Location = new Point(498, 619);
+            btnNovoBaralho.Font = new Font("Castellar", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNovoBaralho.Location = new Point(501, 617);
             btnNovoBaralho.Name = "btnNovoBaralho";
-            btnNovoBaralho.Size = new Size(131, 57);
+            btnNovoBaralho.Size = new Size(119, 57);
             btnNovoBaralho.TabIndex = 5;
             btnNovoBaralho.Text = "Novo Jogo";
             btnNovoBaralho.UseVisualStyleBackColor = true;
             // 
             // panelJogador
             // 
-            panelJogador.Location = new Point(12, 428);
+            panelJogador.BackColor = Color.Transparent;
+            panelJogador.Location = new Point(41, 428);
             panelJogador.Name = "panelJogador";
             panelJogador.Size = new Size(577, 170);
             panelJogador.TabIndex = 6;
             // 
             // panelBanca
             // 
-            panelBanca.Location = new Point(12, 41);
+            panelBanca.BackColor = Color.Transparent;
+            panelBanca.Location = new Point(41, 40);
             panelBanca.Name = "panelBanca";
             panelBanca.Size = new Size(577, 170);
             panelBanca.TabIndex = 7;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(676, 262);
-            label1.Name = "label1";
-            label1.Size = new Size(39, 15);
-            label1.TabIndex = 8;
-            label1.Text = "Placar";
-            // 
-            // lblpontjog
-            // 
-            lblpontjog.AutoSize = true;
-            lblpontjog.Location = new Point(657, 322);
-            lblpontjog.Name = "lblpontjog";
-            lblpontjog.Size = new Size(52, 15);
-            lblpontjog.TabIndex = 9;
-            lblpontjog.Text = "Jogador:";
-            // 
-            // lblpontbanca
-            // 
-            lblpontbanca.AutoSize = true;
-            lblpontbanca.Location = new Point(657, 293);
-            lblpontbanca.Name = "lblpontbanca";
-            lblpontbanca.Size = new Size(42, 15);
-            lblpontbanca.TabIndex = 10;
-            lblpontbanca.Text = "Banca:";
-            // 
             // lblVitoriasJogador
             // 
             lblVitoriasJogador.AutoSize = true;
-            lblVitoriasJogador.Location = new Point(715, 322);
+            lblVitoriasJogador.BackColor = Color.Transparent;
+            lblVitoriasJogador.Font = new Font("Castellar", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblVitoriasJogador.ForeColor = Color.FromArgb(0, 0, 192);
+            lblVitoriasJogador.Location = new Point(644, 409);
             lblVitoriasJogador.Name = "lblVitoriasJogador";
-            lblVitoriasJogador.Size = new Size(13, 15);
+            lblVitoriasJogador.Size = new Size(28, 25);
             lblVitoriasJogador.TabIndex = 11;
             lblVitoriasJogador.Text = "0";
             // 
             // lblVitoriasBanca
             // 
             lblVitoriasBanca.AutoSize = true;
-            lblVitoriasBanca.Location = new Point(715, 293);
+            lblVitoriasBanca.BackColor = Color.Transparent;
+            lblVitoriasBanca.Font = new Font("Castellar", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblVitoriasBanca.ForeColor = Color.FromArgb(128, 64, 0);
+            lblVitoriasBanca.Location = new Point(644, 355);
             lblVitoriasBanca.Name = "lblVitoriasBanca";
-            lblVitoriasBanca.Size = new Size(13, 15);
+            lblVitoriasBanca.Size = new Size(28, 25);
             lblVitoriasBanca.TabIndex = 12;
             lblVitoriasBanca.Text = "0";
             // 
             // btnTrapaca
             // 
-            btnTrapaca.Location = new Point(332, 619);
+            btnTrapaca.Font = new Font("Castellar", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTrapaca.Location = new Point(326, 618);
             btnTrapaca.Name = "btnTrapaca";
-            btnTrapaca.Size = new Size(131, 57);
+            btnTrapaca.Size = new Size(119, 57);
             btnTrapaca.TabIndex = 13;
             btnTrapaca.Text = "Trapacear";
             btnTrapaca.UseVisualStyleBackColor = true;
@@ -171,21 +160,22 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.madeira1;
+            BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(804, 688);
+            Controls.Add(btnNovoJogo);
+            Controls.Add(btnNovoBaralho);
             Controls.Add(btnTrapaca);
+            Controls.Add(btnNovaCarta);
             Controls.Add(lblVitoriasBanca);
             Controls.Add(lblVitoriasJogador);
-            Controls.Add(lblpontbanca);
-            Controls.Add(lblpontjog);
-            Controls.Add(label1);
             Controls.Add(panelBanca);
             Controls.Add(lblJogador);
-            Controls.Add(btnNovoBaralho);
-            Controls.Add(btnNovoJogo);
-            Controls.Add(btnNovaCarta);
             Controls.Add(panelJogador);
             Controls.Add(btnParar);
             Controls.Add(lblBanca);
+            DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -203,9 +193,6 @@
         private Button btnNovoBaralho;
         private Panel panelJogador;
         private Panel panelBanca;
-        private Label label1;
-        private Label lblpontjog;
-        private Label lblpontbanca;
         private Label lblVitoriasJogador;
         private Label lblVitoriasBanca;
         private Button btnTrapaca;
